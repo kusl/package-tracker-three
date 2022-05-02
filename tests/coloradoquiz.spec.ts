@@ -6,6 +6,6 @@ test.beforeEach(async ({ page }) => {
 
 test.describe('Load page', () => {
   test('should load the page', async ({ page }) => {
-    console.info({ page });
+    console.info({ url: page.mainFrame().url() });
   });
 });
